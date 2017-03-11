@@ -1,6 +1,6 @@
 # Tim16-Trijak
-Trijak
-Clanovi tima:
-1. Dzenana Puscul
-2. Emina Modric
-3. Neira Pulo
+
+Clanovi tima:\n
+1. Dzenana Puscul\n
+2. Emina Modric\n
+3. Neira Pulo\n
