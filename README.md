@@ -1,6 +1,7 @@
 # Tim16-Trijak
 
-Clanovi tima:
+#Clanovi tima:
+
 
 1. Dzenana Puscul
 
