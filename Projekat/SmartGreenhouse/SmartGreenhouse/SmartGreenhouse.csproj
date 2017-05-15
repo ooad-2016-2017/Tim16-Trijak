@@ -105,6 +105,9 @@
     <Compile Include="View\Direktor_pocetni.xaml.cs">
       <DependentUpon>Direktor_pocetni.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Dodavanje_uklanjanje_sadnica.xaml.cs">
+      <DependentUpon>Dodavanje_uklanjanje_sadnica.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Izvjestaj_o_prodaji.xaml.cs">
       <DependentUpon>Izvjestaj_o_prodaji.xaml</DependentUpon>
     </Compile>
@@ -151,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Direktor_pocetni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Dodavanje_uklanjanje_sadnica.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
