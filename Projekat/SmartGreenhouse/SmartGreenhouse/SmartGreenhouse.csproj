@@ -111,6 +111,9 @@
     <Compile Include="View\Prijava.xaml.cs">
       <DependentUpon>Prijava.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Registracija_radnika.xaml.cs">
+      <DependentUpon>Registracija_radnika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Zemljoradnik_pocetni.xaml.cs">
       <DependentUpon>Zemljoradnik_pocetni.xaml</DependentUpon>
     </Compile>
@@ -156,6 +159,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Prijava.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Registracija_radnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
