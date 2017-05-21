@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartGreenhouse.Model
 {
-    class Statistika
+    public class Statistika
     {
         private Sadnica vrstaSadnice;
         private DateTime datumIzvjestaja;

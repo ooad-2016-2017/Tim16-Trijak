@@ -99,6 +99,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Izvjestaj.cs" />
+    <Compile Include="Model\Ponuda.cs" />
     <Compile Include="Model\PreuzimanjeInformacija.cs" />
     <Compile Include="Model\Sadnica.cs" />
     <Compile Include="Model\Statistika.cs" />
