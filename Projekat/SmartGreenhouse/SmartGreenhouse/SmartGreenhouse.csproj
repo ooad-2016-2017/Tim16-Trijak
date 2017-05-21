@@ -123,6 +123,9 @@
     <Compile Include="View\Registracija_radnika.xaml.cs">
       <DependentUpon>Registracija_radnika.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Upisivanje_narudzbe.xaml.cs">
+      <DependentUpon>Upisivanje_narudzbe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Zemljoradnik_pocetni.xaml.cs">
       <DependentUpon>Zemljoradnik_pocetni.xaml</DependentUpon>
     </Compile>
@@ -184,6 +187,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Registracija_radnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Upisivanje_narudzbe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
