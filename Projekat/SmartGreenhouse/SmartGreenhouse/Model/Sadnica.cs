@@ -8,5 +8,83 @@ namespace SmartGreenhouse.Model
 {
     public class Sadnica
     {
+        private int pozicija;
+        private String naziv;
+        private float cijena;
+        private int kolicina;
+
+        public Sadnica(int pozicija, string naziv, float cijena, int kolicina)
+        {
+            this.pozicija = pozicija;
+            this.naziv = naziv;
+            this.cijena = cijena;
+            this.kolicina = kolicina;
+        }
+
+        public Sadnica() { }
+
+        public int Pozicija
+        {
+            get
+            {
+                return pozicija;
+            }
+
+            set
+            {
+                pozicija = value;
+            }
+        }
+
+        public string Naziv
+        {
+            get
+            {
+                return naziv;
+            }
+
+            set
+            {
+                naziv = value;
+            }
+        }
+
+        public float Cijena
+        {
+            get
+            {
+                return cijena;
+            }
+
+            set
+            {
+                cijena = value;
+            }
+        }
+
+        public int Kolicina
+        {
+            get
+            {
+                return kolicina;
+            }
+
+            set
+            {
+                kolicina = value;
+            }
+        }
+
+        public bool dostupnost()
+        {
+            return kolicina!=0;
+        }
+
+        public bool rezervirajSadnicu(int koliko)
+        {
+            if (kolicina - koliko < 0) return false;
+            kolicina = kolicina - koliko;
+            return true;
+        }
     }
 }
