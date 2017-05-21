@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace SmartGreenhouse.Model
 {
-    public class TipKorisnika
+    public class TipIzvjestaja
     {
-        private String naziv;
-        private int id;
+        private string naziv;
+        private string id;
 
-        public TipKorisnika(String naziv, int iD)
+        public TipIzvjestaja(string naziv, string iD)
         {
             this.naziv = naziv;
             id = iD;
         }
 
-        public String Naziv
+        public TipIzvjestaja() { }
+
+        public string Naziv
         {
             get
             {
@@ -30,7 +32,7 @@ namespace SmartGreenhouse.Model
             }
         }
 
-        public int ID
+        public string ID
         {
             get
             {
