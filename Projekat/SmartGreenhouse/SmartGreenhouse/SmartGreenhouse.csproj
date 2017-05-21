@@ -98,7 +98,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Izvjestaj.cs" />
     <Compile Include="Model\PreuzimanjeInformacija.cs" />
+    <Compile Include="Model\Sadnica.cs" />
     <Compile Include="Model\TipIzvjestaja.cs" />
     <Compile Include="Model\TipKorisnika.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
