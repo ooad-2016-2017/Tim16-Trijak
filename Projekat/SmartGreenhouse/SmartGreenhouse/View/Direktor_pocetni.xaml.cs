@@ -27,5 +27,9 @@ namespace SmartGreenhouse.View
             this.InitializeComponent();
         }
 
+        private void prikazinarudzbe_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Arhiva_narudzbi), null);
+        }
     }
 }
