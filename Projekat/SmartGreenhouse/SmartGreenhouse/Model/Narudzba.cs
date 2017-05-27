@@ -10,25 +10,29 @@ namespace SmartGreenhouse.Model
     {
         private DateTime datumNarudzbe;
         static int redniBrojNarudzbe = 0;
+        private ObservableCollection<Sadnica> sadnice;
 
-        public Narudzba(DateTime datumNarudzbe)
+        public Narudzba(DateTime datumNarudzbe, ObservableCollection<Sadnica> izabraneSadnice)
         {
             this.datumNarudzbe=datimNarudzbe;
             redniBrojNarudzbe = redniBrojNarudzbe + 1;
+            this.sadnice = izabraneSadnice;
 
         }
         public static int sljedeciBrojNaudzbe();
 
-        public void dodajIzabarnuSadnicu(Sadnica stavka){}
-        public bool validirajNarudzbu(Sadnica stvka) {
-            if (this.stavka.Prodato - this.stavka.Kolicina < 0)
+        public void dodajIzabarnuSadnicu(Sadnica sadnica){
+            sadnice.Add(sadnica);
+        }
+        public bool validirajNarudzbu() {
+            if (this.sadnice.Prodato - this.sadnice.Kolicina < 0)
                 return false;
             else
                 return true;
         }
-        public bool rezervirajNarudzbu(Sadnica stavka)
+        public bool rezervirajNarudzbu()
         {
-            this.stavka.Prodato = this.stavka.Prodato - this.Kolicina;
+            this.sadnice.Prodato = this.sadnice.Prodato - this.Kolicina;
         }
 
        
