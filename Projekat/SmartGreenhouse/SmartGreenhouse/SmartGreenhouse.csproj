@@ -107,7 +107,7 @@
     <Compile Include="Model\TipIzvjestaja.cs" />
     <Compile Include="Model\TipKorisnika.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModel\Class1.cs" />
+    <Compile Include="ViewModel\IzvjestajViewModel.cs" />
     <Compile Include="ViewModel\DodajSadnicuViewModel.cs" />
     <Compile Include="ViewModel\IzmjenaCijeneSadniceViewModel.cs" />
     <Compile Include="ViewModel\NarudzbaViewModel.cs" />
