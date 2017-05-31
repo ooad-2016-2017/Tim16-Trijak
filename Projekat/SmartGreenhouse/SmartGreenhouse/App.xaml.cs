@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartGreenhouse.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -30,6 +31,11 @@ namespace SmartGreenhouse
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            var db = new GreenhouseContext();
+            
+            //db.Database.Migrate();
+            
         }
 
         /// <summary>

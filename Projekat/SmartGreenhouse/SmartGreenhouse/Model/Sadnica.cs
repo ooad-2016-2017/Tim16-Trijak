@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SmartGreenhouse.Model
 {
-    public class Sadnica : INotifyPropertyChanged
+    public class Sadnica
+
     {
         private int pozicija;
         private String naziv;
@@ -38,7 +39,7 @@ namespace SmartGreenhouse.Model
             set
             {
                 pozicija = value;
-                OnPropertyChanged("Pozicija");
+              
             }
         }
 
@@ -53,7 +54,6 @@ namespace SmartGreenhouse.Model
             set
             {
                 naziv = value;
-                OnPropertyChanged("Naziv");
             }
         }
 
@@ -67,7 +67,6 @@ namespace SmartGreenhouse.Model
             set
             {
                 cijena = value;
-                OnPropertyChanged("Cijena");
             }
         }
 
@@ -81,7 +80,6 @@ namespace SmartGreenhouse.Model
             set
             {
                 kolicina = value;
-                OnPropertyChanged("Kolicina");
             }
         }
 
@@ -95,7 +93,6 @@ namespace SmartGreenhouse.Model
             set
             {
                 prodato = value;
-                OnPropertyChanged("Prodato");
             }
         }
 

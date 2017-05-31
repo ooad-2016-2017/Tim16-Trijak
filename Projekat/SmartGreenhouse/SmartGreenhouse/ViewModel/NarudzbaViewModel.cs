@@ -9,6 +9,7 @@ namespace SmartGreenhouse.ViewModel
 {
     class NarudzbaViewModel
     {
+        /*
         private ObservableCollection<Artikal> listaArtikala;
         private Sadnica oznacenaSadnica;
         private bool imaNaStanju;
@@ -51,6 +52,6 @@ namespace SmartGreenhouse.ViewModel
 
 
 
-
+    */
     }
 }
