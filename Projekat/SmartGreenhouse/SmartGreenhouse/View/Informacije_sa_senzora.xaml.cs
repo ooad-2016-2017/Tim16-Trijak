@@ -26,5 +26,10 @@ namespace SmartGreenhouse.View
         {
             this.InitializeComponent();
         }
+
+        private void nazad_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Zemljoradnik_pocetni), null);
+        }
     }
 }
