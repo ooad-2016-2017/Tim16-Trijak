@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,8 @@ namespace SmartGreenhouse.Model
     public class Sadnica
 
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        int id;
         private int pozicija;
         private String naziv;
         private float cijena;
@@ -93,6 +96,19 @@ namespace SmartGreenhouse.Model
             set
             {
                 prodato = value;
+            }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
             }
         }
 

@@ -12,7 +12,14 @@ namespace SmartGreenhouse.Model
     class GreenhouseContext:DbContext
     {
         public DbSet<Sadnica> Sadnice { get; set; }
-        //public DbSet<Post> Posts { get; set; }
+        public DbSet<Izvjestaj> Izvjestaji { get; set; }
+        public DbSet<Narudzba> Narudzbe { get; set; }
+        public DbSet<Ponuda> Ponude { get; set; }
+        public DbSet<PreuzimanjeInformacija> PreuzeteInformacije { get; set; }
+        public DbSet<Statistika> Statistike { get; set; }
+        public DbSet<TipIzvjestaja> TipoviIzvjestaja { get; set; }
+        public DbSet<TipKorisnika> TipoviKorisnika { get; set; }
+
         //dodati ostale setove/tabele
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -1,4 +1,5 @@
-﻿using SmartGreenhouse.Model;
+﻿using Microsoft.EntityFrameworkCore;
+using SmartGreenhouse.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -34,7 +35,7 @@ namespace SmartGreenhouse
 
             var db = new GreenhouseContext();
             
-            //db.Database.Migrate();
+            db.Database.Migrate();
             
         }
 

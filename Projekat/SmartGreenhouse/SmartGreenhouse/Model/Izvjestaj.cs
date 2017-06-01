@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,8 @@ namespace SmartGreenhouse.Model
 {
     public class Izvjestaj
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        int id;
         private DateTime datumIzvjestaja;
         private Sadnica[] vrstaSadnice;
         private TipIzvjestaja tipIzvjestaja;
@@ -59,7 +62,18 @@ namespace SmartGreenhouse.Model
                 tipIzvjestaja = value;
             }
         }
-        
-        
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
     }
 }
