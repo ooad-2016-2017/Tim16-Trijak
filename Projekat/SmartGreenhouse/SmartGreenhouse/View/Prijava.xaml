@@ -7,7 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.DataContext>
+        <local:PrijavaViewModel/>
+    </Page.DataContext>
+
+
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -29,10 +35,9 @@
         <TextBlock x:Name="tekstime" Grid.Column="1" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Ime:" VerticalAlignment="Center" FontSize="23" Width="Auto" HorizontalAlignment="Right"/>
         <TextBlock x:Name="tekstprezime" Grid.Column="1" HorizontalAlignment="Right" Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="Prezime:" VerticalAlignment="Center" FontSize="23" Width="Auto"/>
         <TextBlock x:Name="textlozinka" Grid.Column="1" HorizontalAlignment="Right" Margin="0" Grid.Row="4" TextWrapping="Wrap" Text="Lozinka:" VerticalAlignment="Center" FontSize="23" Width="86"/>
-        <Button x:Name="kreni" Content="Prijava" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="5" VerticalAlignment="Center" RenderTransformOrigin="0.836,-0.302" Width="Auto" Click="kreni_Click"/>
-        <TextBox x:Name="ime" Grid.Column="2" HorizontalAlignment="Stretch" Margin="31,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="Auto" />
-        <TextBox x:Name="prezime" Grid.Column="2" HorizontalAlignment="Stretch" Margin="31,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="Auto" MinWidth="50"/>
-        <PasswordBox x:Name="lozinka" Grid.Column="2" HorizontalAlignment="Stretch" Margin="31,0" Grid.Row="4" VerticalAlignment="Center" Width="Auto" PasswordChar="*" IsPasswordRevealButtonEnabled="True" MinWidth="50"/>
-
+        <Button x:Name="kreni" Content="Prijava" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="5" VerticalAlignment="Center" RenderTransformOrigin="0.836,-0.302" Width="Auto" Click="kreni_Click" Command="{Binding ButtonClicked}"/>
+        <TextBox x:Name="ime" Grid.Column="2" HorizontalAlignment="Stretch" Margin="31,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Ime, Mode=TwoWay}" VerticalAlignment="Center" Width="Auto" />
+        <TextBox x:Name="prezime" Grid.Column="2" HorizontalAlignment="Stretch" Margin="31,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding Prezime, Mode=TwoWay}" VerticalAlignment="Center" Width="Auto" MinWidth="50"/>
+        <PasswordBox x:Name="lozinka" Grid.Column="2" HorizontalAlignment="Stretch" Margin="31,0" Grid.Row="4" VerticalAlignment="Center" Width="Auto" PasswordChar="*" IsPasswordRevealButtonEnabled="True" MinWidth="50" Password="{Binding Password, Mode=TwoWay}"/>
     </Grid>
 </Page>

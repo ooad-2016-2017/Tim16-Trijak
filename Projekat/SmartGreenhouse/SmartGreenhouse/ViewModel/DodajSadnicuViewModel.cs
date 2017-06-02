@@ -8,7 +8,7 @@ namespace SmartGreenhouse.ViewModel
 {
     class DodajSadnicuViewModel
     {
-        private String nazivSadnice;
+      /*  private String nazivSadnice;
         private int kolicina;
         private float cijena;
 
@@ -31,7 +31,7 @@ namespace SmartGreenhouse.ViewModel
         public volid dajCijenu()
         {
             //this.cijena=
-        }
+        }*/
 
 
     }

@@ -95,9 +95,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="Helper\INavigationService.cs" />
+    <Compile Include="Helper\NavigationService.cs" />
+    <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Korisnik.cs" />
     <Compile Include="Model\Izvjestaj.cs" />
     <Compile Include="Model\Narudzba.cs" />
     <Compile Include="Model\Ponuda.cs" />
@@ -107,6 +112,8 @@
     <Compile Include="Model\TipIzvjestaja.cs" />
     <Compile Include="Model\TipKorisnika.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\PrijavaViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModelBas.cs" />
     <Compile Include="ViewModel\IzvjestajViewModel.cs" />
     <Compile Include="ViewModel\DodajSadnicuViewModel.cs" />
     <Compile Include="ViewModel\IzmjenaCijeneSadniceViewModel.cs" />

@@ -10,10 +10,11 @@ namespace SmartGreenhouse.ViewModel
     class IzmjenaCijeneSadniceViewModel
 {
        // private ObservableCollection<Sadnica> _listaSadnica;
-        private Sadnica oznacenaSadnica;
+       /* private Sadnica oznacenaSadnica;
 
         public IzmjenaCijeneSadniceViewModel() {
-            IzmjeniCijenu = new RelayCommand(izmjeniCijenu);            oznacenaSadnica = null;
+            IzmjeniCijenu = new RelayCommand(izmjeniCijenu);
+            oznacenaSadnica = null;
         }
 
 
@@ -26,8 +27,9 @@ namespace SmartGreenhouse.ViewModel
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
-        }        public float izmjeniCijenu(object parametar) {
-            //this.oznacenaSadnica.Cijena=
         }
+        public float izmjeniCijenu(object parametar) {
+            //this.oznacenaSadnica.Cijena=
+        }*/
     }
 }

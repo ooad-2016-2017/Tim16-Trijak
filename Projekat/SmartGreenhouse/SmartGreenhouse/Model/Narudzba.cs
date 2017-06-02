@@ -8,9 +8,9 @@ namespace SmartGreenhouse.Model
 {
     class Narudzba
     {
-        private DateTime datumNarudzbe;
+       /* private DateTime datumNarudzbe;
         static int redniBrojNarudzbe = 0;
-        private ObservableCollection<Sadnica> sadnice;
+        private ObservableCollection <Sadnica> sadnice;
 
         public Narudzba(DateTime datumNarudzbe, ObservableCollection<Sadnica> izabraneSadnice)
         {
@@ -32,7 +32,7 @@ namespace SmartGreenhouse.Model
         }
         public bool rezervirajNarudzbu()
         {
-            this.sadnice.Prodato = this.sadnice.Prodato - this.Kolicina;
+            this.sadnice.Prodato = this.sadnice.Prodato - this.Kolicina;*/
         }
 
        

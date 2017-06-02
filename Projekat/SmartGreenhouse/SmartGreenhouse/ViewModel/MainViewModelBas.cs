@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace SmartGreenhouse
 {
-    public abstract class MainViewModelBase : INotifyPropertyChanged
+    public abstract class MainViewModelBas : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChangedEventHandler handler = this.PropertyChanged;
-            if(handler != null)
+            if (handler != null)
             {
                 handler(this, new PropertyChangedEventArgs(propertyName));
             }

@@ -40,6 +40,6 @@
         <TextBlock x:Name="textBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="0,38" Grid.Row="2" TextWrapping="Wrap" Text="Izmjena cijena sadnica" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="22"/>
         <ListView x:Name="listView" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Center" Height="100" Margin="0" Grid.Row="3" Grid.RowSpan="6" VerticalAlignment="Center" Width="100"/>
         <Button x:Name="dodaj" Content="Sačuvaj" Grid.Column="3" HorizontalAlignment="Left" Margin="0" Grid.Row="9" VerticalAlignment="Center"/>
-
+        
     </Grid>
 </Page>
