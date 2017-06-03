@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +9,26 @@ namespace SmartGreenhouse.Model
 {
     public class TipKorisnika
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        int id;
         private String naziv;
-        private int id;
 
-        public TipKorisnika(String naziv, int iD)
+        public TipKorisnika(String naziv)
         {
             this.naziv = naziv;
-            id = iD;
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
         }
 
         public String Naziv
@@ -30,17 +44,6 @@ namespace SmartGreenhouse.Model
             }
         }
 
-        public int ID
-        {
-            get
-            {
-                return id;
-            }
-
-            set
-            {
-                id = value;
-            }
-        }
+        
     }
 }

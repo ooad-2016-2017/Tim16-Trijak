@@ -26,5 +26,32 @@ namespace SmartGreenhouse.View
         {
             this.InitializeComponent();
         }
+
+        private void senzori_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Informacije_sa_senzora), null);
+        }
+
+        private void izmijenisadnice_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Izmjena_stanja_sadnica), null);
+        }
+
+        private void dodajuklonisortu_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Dodavanje_uklanjanje_sadnica), null);
+        }
+
+        private void promijenicijenu_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Izmjena_cijena_sadnica), null);
+        }
+
+        private void upisinarudzbu_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Upisivanje_narudzbe), null);
+        }
+
+        
     }
 }

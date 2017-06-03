@@ -8,7 +8,12 @@ namespace SmartGreenhouse.ViewModel
 {
     class DodajSadnicuViewModel
     {
+<<<<<<< HEAD
       /*  private String nazivSadnice;
+=======
+        /*
+        private String nazivSadnice;
+>>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
         private int kolicina;
         private float cijena;
 
@@ -31,8 +36,13 @@ namespace SmartGreenhouse.ViewModel
         public volid dajCijenu()
         {
             //this.cijena=
+<<<<<<< HEAD
         }*/
 
+=======
+        }
+*/
+>>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
 
     }
 }

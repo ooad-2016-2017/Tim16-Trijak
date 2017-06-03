@@ -9,7 +9,12 @@ namespace SmartGreenhouse.ViewModel
 {
     class NarudzbaViewModel
     {
+<<<<<<< HEAD
       /*  private ObservableCollection<Artikal> listaArtikala;
+=======
+        /*
+        private ObservableCollection<Artikal> listaArtikala;
+>>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
         private Sadnica oznacenaSadnica;
         private bool imaNaStanju;
         private Korisnik trenutniKorisnik;
@@ -51,6 +56,6 @@ namespace SmartGreenhouse.ViewModel
 
     */
 
-
+    */
     }
 }

@@ -9,6 +9,7 @@ namespace SmartGreenhouse.ViewModel
 {
     class IzmjenaCijeneSadniceViewModel
 {
+        /*
        // private ObservableCollection<Sadnica> _listaSadnica;
        /* private Sadnica oznacenaSadnica;
 
@@ -20,6 +21,7 @@ namespace SmartGreenhouse.ViewModel
 
         public RelayCommand IzmjeniCijenu { get; set; }
 
+<<<<<<< HEAD
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(string propertyName)
         {
@@ -31,5 +33,11 @@ namespace SmartGreenhouse.ViewModel
         public float izmjeniCijenu(object parametar) {
             //this.oznacenaSadnica.Cijena=
         }*/
+=======
+        public float izmjeniCijenu(object parametar) {
+            //this.oznacenaSadnica.Cijena=
+        }
+        */
+>>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
     }
 }

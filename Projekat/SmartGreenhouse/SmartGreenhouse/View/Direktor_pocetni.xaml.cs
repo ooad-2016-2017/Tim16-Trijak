@@ -31,5 +31,25 @@ namespace SmartGreenhouse.View
         {
             Frame.Navigate(typeof(Arhiva_narudzbi), null);
         }
+
+        private void registrradnika_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Registracija_radnika), null);
+        }
+
+        private void prikazisedmizvj_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Izvjestaj_o_prodaji), null);
+        }
+
+        private void prikazimjesizvj_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Izvjestaj_o_prodaji), null);
+        }
+
+        private void prikazigodizvj_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Izvjestaj_o_prodaji), null);
+        }
     }
 }

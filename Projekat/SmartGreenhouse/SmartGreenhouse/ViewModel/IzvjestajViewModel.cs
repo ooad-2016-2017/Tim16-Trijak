@@ -9,7 +9,12 @@ namespace SmartGreenhouse.ViewModel
     class IzvjestajViewModel
 
     {
+<<<<<<< HEAD
        /* private Sadnica sadnica;
+=======
+        /*
+        private Sadnica sadnica;
+>>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
         private DateTime datum;
         private TipIzvjestaja tip;
 
@@ -39,6 +44,6 @@ public INavigationService NavigationService
 
         }*/
 
-
+    */
     }
 }

@@ -30,7 +30,7 @@
 
         <Image Source="ms-appx:///Assets/slika3.jpg" Grid.Column="5" Margin="0" Grid.RowSpan="12" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill"/>
         <TextBlock x:Name="naslov" HorizontalAlignment="Center" Margin="116,16,196,16" TextWrapping="Wrap" Text="Smart GreenHouse" VerticalAlignment="Center" FontSize="55" FontWeight="Bold" Width="Auto" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="1"/>
-        <Button x:Name="nazad" Content="Natrag na pocetnu" Grid.Column="1" HorizontalAlignment="Left" Margin="0" Grid.Row="11" VerticalAlignment="Center"/>
+        <Button x:Name="nazad" Content="Natrag na pocetnu" Grid.Column="1" HorizontalAlignment="Left" Margin="0" Grid.Row="11" VerticalAlignment="Center" Click="nazad_Click"/>
         <CalendarView HorizontalAlignment="Center" Margin="0" Grid.Row="6" VerticalAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
         <TextBox x:Name="napomena" HorizontalAlignment="Center" Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.RowSpan="3" InputScope="Text" Grid.Column="1" AcceptsReturn="True" PlaceholderText="Napiši napomenu"/>
         <TextBox x:Name="imeprezime" HorizontalAlignment="Left" Margin="10,11,0,10" TextWrapping="Wrap" Text="ime i prezime" VerticalAlignment="Center" InputScope="Text" Grid.Column="1"/>

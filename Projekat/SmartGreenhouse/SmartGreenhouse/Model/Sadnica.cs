@@ -1,14 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SmartGreenhouse.Model
 {
+<<<<<<< HEAD
     public class Sadnica : INotifyPropertyChanged
+=======
+    public class Sadnica
+>>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
 
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        int id;
         private int pozicija;
         private String naziv;
         private float cijena;
@@ -39,8 +46,12 @@ namespace SmartGreenhouse.Model
             set
             {
                 pozicija = value;
+<<<<<<< HEAD
                 OnPropertyChanged("Pozicija");
 
+=======
+              
+>>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
             }
         }
 
@@ -55,7 +66,6 @@ namespace SmartGreenhouse.Model
             set
             {
                 naziv = value;
-                OnPropertyChanged("Naziv");
             }
         }
 
@@ -69,7 +79,6 @@ namespace SmartGreenhouse.Model
             set
             {
                 cijena = value;
-                OnPropertyChanged("Cijena");
             }
         }
 
@@ -83,7 +92,6 @@ namespace SmartGreenhouse.Model
             set
             {
                 kolicina = value;
-                OnPropertyChanged("Kolicina");
             }
         }
 
@@ -97,7 +105,19 @@ namespace SmartGreenhouse.Model
             set
             {
                 prodato = value;
-                OnPropertyChanged("Prodato");
+            }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
             }
         }
 
