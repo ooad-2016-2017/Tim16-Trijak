@@ -99,12 +99,12 @@
     <Compile Include="Helper\INavigationService.cs" />
     <Compile Include="Helper\NavigationService.cs" />
     <Compile Include="Helper\RelayCommand.cs" />
-    <Compile Include= "MainPage.xaml.cs">
+    <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-
+<<<<<<< HEAD
     <Compile Include="Model\Korisnik.cs" />
-
+=======
     <Compile Include="Migrations\20170601150838_MyFirstMigration.cs" />
     <Compile Include="Migrations\20170601150838_MyFirstMigration.designer.cs">
       <DependentUpon>20170601150838_MyFirstMigration.cs</DependentUpon>
@@ -221,7 +221,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Registracija_radnika.xaml">
+    <Page Include= "View\Registracija_radnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
