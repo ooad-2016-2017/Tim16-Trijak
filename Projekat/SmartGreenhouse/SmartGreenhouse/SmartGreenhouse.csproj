@@ -102,16 +102,14 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Model\Korisnik.cs" />
-=======
+     <Compile Include="Model\Korisnik.cs" />
+
     <Compile Include="Migrations\20170601150838_MyFirstMigration.cs" />
     <Compile Include="Migrations\20170601150838_MyFirstMigration.designer.cs">
       <DependentUpon>20170601150838_MyFirstMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\GreenhouseContextModelSnapshot.cs" />
     <Compile Include="Model\GreenhouseContext.cs" />
->>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
     <Compile Include="Model\Izvjestaj.cs" />
     <Compile Include="Model\Narudzba.cs" />
     <Compile Include="Model\Ponuda.cs" />
