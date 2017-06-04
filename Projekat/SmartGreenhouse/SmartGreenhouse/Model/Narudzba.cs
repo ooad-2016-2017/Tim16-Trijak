@@ -9,17 +9,16 @@ namespace SmartGreenhouse.Model
 {
     class Narudzba
     {
-<<<<<<< HEAD
-       /* private DateTime datumNarudzbe;
+
+        private DateTime datumNarudzbe;
         static int redniBrojNarudzbe = 0;
-        private ObservableCollection <Sadnica> sadnice;
-=======
+        private ObservableCollection<Sadnica> sadnice;
+
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         int id;
         private DateTime datumNarudzbe;
         static int redniBrojNarudzbe = 0;
         private List<Sadnica> sadnice;
->>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
 
 
         public int Id
@@ -86,10 +85,12 @@ namespace SmartGreenhouse.Model
             return RedniBrojNarudzbe + 1;
         }
 
-        public void dodajIzabarnuSadnicu(Sadnica sadnica){
+        public void dodajIzabarnuSadnicu(Sadnica sadnica)
+        {
             Sadnice.Add(sadnica);
         }
-        /*public bool validirajNarudzbu() {
+        public bool validirajNarudzbu()
+        {
             if (this.sadnice.prodato - sadnice.kolicina < 0)
                 return false;
             else
@@ -97,12 +98,11 @@ namespace SmartGreenhouse.Model
         }
         public bool rezervirajNarudzbu()
         {
-<<<<<<< HEAD
-            this.sadnice.Prodato = this.sadnice.Prodato - this.Kolicina;*/
-=======
-            this.sadnice.prodato = this.sadnice.prodato - this.Kolicina;*/
->>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
+            this.sadnice.Prodato = this.sadnice.Prodato - this.Kolicina;
+
+            this.sadnice.prodato = this.sadnice.prodato - this.Kolicina;
         }
 
-       
+
     }
+}

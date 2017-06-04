@@ -7,11 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmartGreenhouse.Model
 {
-<<<<<<< HEAD
     public class Sadnica : INotifyPropertyChanged
-=======
-    public class Sadnica
->>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
 
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -46,12 +42,9 @@ namespace SmartGreenhouse.Model
             set
             {
                 pozicija = value;
-<<<<<<< HEAD
                 OnPropertyChanged("Pozicija");
 
-=======
               
->>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
             }
         }
 
