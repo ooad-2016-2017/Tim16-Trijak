@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace SmartGreenhouse.ViewModel
 {
     class NarudzbaViewModel
-    {
-<<<<<<< HEAD
+    { 
       /*  private ObservableCollection<Artikal> listaArtikala;
 =======
         /*
@@ -56,6 +55,6 @@ namespace SmartGreenhouse.ViewModel
 
     */
 
-    */
+    
     }
 }

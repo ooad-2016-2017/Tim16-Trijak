@@ -1,4 +1,5 @@
-﻿using SmartGreenhouse.Model;
+﻿using SmartGreenhouse.Helper;
+using SmartGreenhouse.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,12 @@ namespace SmartGreenhouse.ViewModel
         private string ime_ = "";
         private string prezime_ = "";
         private string lozinka_ = "";
-
+        private ICommand LogIn { get; set; }
+        public INavigationService NavigationService { get; set; }
+        public PrijavaViewModel() {
+            LogIn = new RelayCommand<object>(PrijaviSe, parameter => true);
+               NavigationService = new NavigationService();
+        }
 
         public string Ime
         {
@@ -59,15 +65,15 @@ namespace SmartGreenhouse.ViewModel
         }
 
 
-        public ICommand ButtonClicked
-        {
-            get
-            {
-                return new DelegateCommand(PrijaviSe);
-            }
-        }
+        //public ICommand ButtonClicked
+        //{
+        //    get
+        //    {
+        //        return new RelayCommand(PrijaviSe);
+        //    }
+        //}
 
-        public void PrijaviSe()
+        public void PrijaviSe(object parameter)
         {
             korisnik_ = new Korisnik(Ime, Prezime, Password);
         }

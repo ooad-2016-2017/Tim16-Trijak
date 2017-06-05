@@ -8,7 +8,7 @@ namespace SmartGreenhouse.ViewModel
 {
     class DodajSadnicuViewModel
     {
-<<<<<<< HEAD
+
       /*  private String nazivSadnice;
 =======
         /*
@@ -39,10 +39,7 @@ namespace SmartGreenhouse.ViewModel
 <<<<<<< HEAD
         }*/
 
-=======
-        }
-*/
->>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
+
 
     }
 }

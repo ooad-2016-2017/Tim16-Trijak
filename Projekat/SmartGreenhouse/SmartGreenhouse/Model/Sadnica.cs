@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SmartGreenhouse.Model
 {
-    public class Sadnica : INotifyPropertyChanged
+    public class Sadnica 
 
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -32,21 +32,23 @@ namespace SmartGreenhouse.Model
             this.prodato = 0;
         }
 
-        public int Pozicija
-        {
-            get
-            {
-                return pozicija;
-            }
 
-            set
-            {
-                pozicija = value;
-                OnPropertyChanged("Pozicija");
+       //Ovo je stvar za viewmodel a ne za model
+        //public int Pozicija
+        //{
+        //    get
+        //    {
+        //        return pozicija;
+        //    }
+
+        //    set
+        //    {
+        //        pozicija = value;
+        //        OnPropertyChanged("Pozicija");
 
               
-            }
-        }
+        //    }
+        //}
 
         public string Naziv
         {
