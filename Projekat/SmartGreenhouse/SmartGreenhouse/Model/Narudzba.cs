@@ -59,20 +59,27 @@ namespace SmartGreenhouse.Model
             }
         }
 
-        //public List<Sadnica> Sadnice
-        //{
-        //    get
-        //    {
-        //        return sadnice;
-        //    }
+       /* public List<Sadnica> Sadnice
+        {
+            get
+            {
+                return sadnice;
+            }
 
-        //    set
-        //    {
-        //        sadnice = value;
-        //    }
-        //}
+            set
+            {
+                sadnice = value;
+            }
+        }
 
-            /* nema smisla da bude u modelu
+
+       /* public Narudzba(int redBr, DateTime datum, List<Sadnica> listaSadnica_)
+        {
+                redniBrojNarudzbe = redBr;
+                datumNarudzbe = datum;
+                Sadnice = ; // popraviti da ide direktno u bazu
+        }
+        /* nema smisla da bude u modelu
         public Narudzba(DateTime datumNarudzbe, List<Sadnica> izabraneSadnice)
         {
             this.DatumNarudzbe = datumNarudzbe;

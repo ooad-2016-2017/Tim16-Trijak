@@ -31,5 +31,10 @@ namespace SmartGreenhouse.View
         {
             Frame.Navigate(typeof(Zemljoradnik_pocetni), null);
         }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

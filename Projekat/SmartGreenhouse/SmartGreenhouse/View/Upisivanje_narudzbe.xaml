@@ -41,9 +41,9 @@
         <TextBlock x:Name="textBlock_Copy" Grid.Column="2" HorizontalAlignment="Left" Margin="0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="22" Text="Dodaj u košaricu" Width="204" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="textBlock_Copy1" Grid.Column="2" HorizontalAlignment="Left" Margin="0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="22"  Text="Sadnica:" Width="204" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="textBlock_Copy2" Grid.Column="2" HorizontalAlignment="Left" Margin="0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="22"  Text="Količina:" Width="204" Grid.ColumnSpan="2"/>
-        <ComboBox x:Name="comboBox" Grid.Column="3" HorizontalAlignment="Left" Height="24" Margin="0" Grid.Row="4" VerticalAlignment="Center" Width="59"/>
-        <TextBox x:Name="textBox" Grid.Column="3" HorizontalAlignment="Left" Margin="0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
-        <Button x:Name="dodaj_Copy" Content="Dodaj" Grid.Column="3" HorizontalAlignment="Left" Margin="0" Grid.Row="6" VerticalAlignment="Center"/>
+        <ComboBox x:Name="comboBox" Grid.Column="3" HorizontalAlignment="Left" Height="24" Margin="0" Grid.Row="4"  VerticalAlignment="Center" Width="59" ItemsSource="{Binding Sadnice}"  SelectedItem="{Binding SelectedSadnice}"/>
+        <TextBox x:Name="textBox" Text="{Binding Kolicina, Mode=TwoWay}" Grid.Column="2" HorizontalAlignment="Right"  Margin="0,8,107,7.333" Grid.Row="5" TextWrapping="Wrap"  VerticalAlignment="Center" Grid.ColumnSpan="3" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="dodaj_Copy" Content="Dodaj" Grid.Column="3"  HorizontalAlignment="Left" Margin="0" Grid.Row="6" VerticalAlignment="Center"/>
         <ListView x:Name="listView" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Center" Height="100" Margin="0" Grid.Row="7" VerticalAlignment="Center" Width="100"/>
 
     </Grid>
