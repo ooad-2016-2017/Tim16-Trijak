@@ -71,13 +71,13 @@ namespace SmartGreenhouse.Model
                 sadnice = value;
             }
         }
+        */
 
-
-       /* public Narudzba(int redBr, DateTime datum, List<Sadnica> listaSadnica_)
+        public Narudzba(int redBr, DateTime datum)
         {
                 redniBrojNarudzbe = redBr;
                 datumNarudzbe = datum;
-                Sadnice = ; // popraviti da ide direktno u bazu
+                 // popraviti da ide direktno u bazu
         }
         /* nema smisla da bude u modelu
         public Narudzba(DateTime datumNarudzbe, List<Sadnica> izabraneSadnice)

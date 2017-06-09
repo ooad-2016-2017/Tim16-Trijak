@@ -19,9 +19,10 @@ namespace SmartGreenhouse.ViewModel
         private int kolicina_ = 0;
         private ICommand Add1 { get; set; }
         private ICommand SendOrder { get; set; }
-        public ObservableCollection<Sadnica> sadnice_;
+        public ObservableCollection<Sadnica> sadnice_ = new ObservableCollection<Sadnica>();
+        public ObservableCollection<Sadnica> odabraneSadnice_ = new ObservableCollection<Sadnica>();
         public INavigationService NavigationService { get; set; }
-        public Sadnica Odabrana { get; set; }
+        public Sadnica odabrana_ { get; set; }
         public NarudzbaViewModel()
         {
             Add1 = new RelayCommand<object>(Dodaj, parameter => true);
@@ -41,9 +42,9 @@ namespace SmartGreenhouse.ViewModel
                 OnPropertyChanged("Kolicina");
             }
         }
-       
-            
-          
+
+
+
 
         public DateTime DatumNarudzbe
         {
@@ -57,34 +58,61 @@ namespace SmartGreenhouse.ViewModel
             }
         }
 
-        public ObservableCollection<Sadnica> Sadnice {
-  
+        public ObservableCollection<Sadnica> Sadnice
+        {
+            get
+            {
+                return sadnice_;
+            }
+
+            set
+            {
+                sadnice_ = value;
+                OnPropertyChanged("Sadnice");
+            }
         }
 
-        public void Dodaj(object parameter)
+        public Sadnica SelectedItem
         {
-          if (Selektovana != null)
+            get
+            {
+                return odabrana_;
+            }
+            set
+            {
+                odabrana_ = value;
+                OnPropertyChanged("SelectedItem");
+            }
+        }
+
+        public async void Dodaj(object parameter)
+        {
+            if (odabrana_ != null)
+            {
+                using (var db = new GreenhouseContext())
                 {
-                    using (var db = new GreenhouseDbContext())
-                    {
-                        var izmjenjena = db.FirstOrDefault(v => v == Odabrana);
-                        izmjenjena.IsCheckedIn = true;
-                        db.SaveChanges();
-                        listaSadnica_.Remove(Odabrana);
-                        listaSadnica_.Add(izmjenjena);
-                    }
+                    int trazeni_Id = 1;
+                    var u = db.Sadnice.Where(b => b.Id == trazeni_Id).FirstOrDefault();
+                    //u.IsCheckedIn = true;
+                    db.SaveChanges();
+                    odabraneSadnice_.Add(odabrana_);
                 }
-                else
-                {
-                    var dialog = new MessageDialog("You haven't selected reservation!");
-                    dialog.Title = "Error";
-                    await dialog.ShowAsync();
-                }
+            }
+            else
+            {
+                var dialog = new MessageDialog("Niste odabrali sadnicu!");
+                dialog.Title = "Error";
+                await dialog.ShowAsync();
+            }
         }
         public void Plasiraj(object parameter)
         {
-            narudzba_ = new Narudzba(redniBrojNarudzbe_,datumNarudzbe_);
+            narudzba_ = new Narudzba(redniBrojNarudzbe_, datumNarudzbe_);
         }
+
+    }
+}
+
 
 
        
@@ -137,5 +165,4 @@ namespace SmartGreenhouse.ViewModel
       */
 
 
-    }
-}
+ 
