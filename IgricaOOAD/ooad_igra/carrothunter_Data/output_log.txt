@@ -7,19 +7,19 @@ Direct3D:
     VRAM:     1401 MB
     Driver:   8.970.100.9001
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.070 seconds
-Platform assembly: C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Pulo\Desktop\ooad_igra\carrothunter_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  2.158 seconds
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
@@ -53,7 +53,7 @@ The tree Larch01 must use the Nature/Soft Occlusion shader. Otherwise billboardi
  
 (Filename:  Line: 140)
 
-UnloadTime: 3.284072 ms
+UnloadTime: 2.502483 ms
 The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
  
 (Filename:  Line: 1067)
@@ -619,16 +619,16 @@ Internal: JobTempAlloc has allocations that are more than 4 frames old - this is
 (Filename:  Line: 371)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 290.234894 ms
+UnloadTime: 345.520966 ms
 
 Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 888.
-Total: 6.005400 ms (FindLiveObjects: 0.170316 ms CreateObjectMapping: 0.090990 ms MarkObjects: 0.882845 ms  DeleteObjects: 4.852849 ms)
+Total: 15.045698 ms (FindLiveObjects: 0.160983 ms CreateObjectMapping: 0.656534 ms MarkObjects: 9.468655 ms  DeleteObjects: 4.750192 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1884 -> priority: 1 
+  Thread -> id: 1440 -> priority: 1 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.456754 ms
+UnloadTime: 2.019065 ms
 
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 885.
-Total: 1.012098 ms (FindLiveObjects: 0.152118 ms CreateObjectMapping: 0.082125 ms MarkObjects: 0.736326 ms  DeleteObjects: 0.033130 ms)
+Total: 0.838982 ms (FindLiveObjects: 0.141852 ms CreateObjectMapping: 0.084458 ms MarkObjects: 0.577209 ms  DeleteObjects: 0.027997 ms)
 
