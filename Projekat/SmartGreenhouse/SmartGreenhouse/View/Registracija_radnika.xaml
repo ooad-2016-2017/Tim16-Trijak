@@ -5,8 +5,13 @@
     xmlns:local="using:SmartGreenhouse.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ViewModel="using:SmartGreenhouse.ViewModel"
     mc:Ignorable="d">
 
+    <Page.DataContext>
+        <ViewModel:RegistracijaRadnikaViewModel x:Name="regis"></ViewModel:RegistracijaRadnikaViewModel>
+    </Page.DataContext>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="80*"/>
@@ -44,6 +49,7 @@
         <TextBlock x:Name="ucitajslikutekstblok" Grid.Column="2" HorizontalAlignment="Left" Margin="0,39.7,0,39.3" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" Text="Učitaj sliku:" />
         <TextBox x:Name="ime_Copy1" Grid.Column="3" HorizontalAlignment="Left" Margin="0,37" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
         <Button x:Name="slika" Content="Učitaj" Grid.Column="3" HorizontalAlignment="Left" Margin="0" Grid.Row="6" VerticalAlignment="Center"/>
-
+        <Button x:Name="reg" Content="Registruj" Grid.Column="3" HorizontalAlignment="Left" Margin="0" Grid.Row="7" VerticalAlignment="Center" IsEnabled="True" Command="{Binding Path = Regis, Mode=TwoWay}"/>
+        
     </Grid>
 </Page>
