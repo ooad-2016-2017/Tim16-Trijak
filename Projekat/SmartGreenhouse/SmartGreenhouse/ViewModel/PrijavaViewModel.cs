@@ -1,11 +1,13 @@
 ﻿using SmartGreenhouse.Helper;
 using SmartGreenhouse.Model;
+using SmartGreenhouse.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.UI.Popups;
 
 namespace SmartGreenhouse.ViewModel
 {
@@ -15,12 +17,23 @@ namespace SmartGreenhouse.ViewModel
         private string ime_ = "";
         private string prezime_ = "";
         private string lozinka_ = "";
-        private ICommand LogIn { get; set; }
+        public ICommand LogIn { get; set; }
         public INavigationService NavigationService { get; set; }
-        public PrijavaViewModel() {
+        public PrijavaViewModel()
+        {
             LogIn = new RelayCommand<object>(PrijaviSe, parameter => true);
-               NavigationService = new NavigationService();
+            NavigationService = new NavigationService();
+
+
+            korisnik_ = new Korisnik();
+            korisnik_.Ime = ime_;
+            korisnik_.Prezime = prezime_;
+            //korisnik_.tip.Id = u.Id;
+            korisnik_.Lozinka = lozinka_;
+            //korisnik_.tip.Naziv = u.Naziv;
+
         }
+
 
         public string Ime
         {
@@ -50,7 +63,7 @@ namespace SmartGreenhouse.ViewModel
             }
         }
 
-        public string Password
+        public string Lozinka
         {
             get
             {
@@ -73,14 +86,78 @@ namespace SmartGreenhouse.ViewModel
         //    }
         //}
 
-        public void PrijaviSe(object parameter)
+        public async void PrijaviSe(object parameter)
         {
-            korisnik_ = new Korisnik(Ime, Prezime, Password);
+
+            korisnik_ = new Korisnik();
+            korisnik_.Ime = ime_;
+            korisnik_.Prezime = prezime_;
+            korisnik_.Lozinka = lozinka_;
+
+            korisnik_ = new Korisnik(Ime, Prezime, Lozinka, "Zemljoradnik", 2);
+            if (korisnik_ != null)
+            {
+                using (var db = new GreenhouseContext())
+
+                    db.TipoviKorisnika.Add(korisnik_.tip);
+            } else
+            {
+                var dialog = new MessageDialog("Neispravna prijava.\n Pokušajte ponovo.");
+                dialog.Title = "Error";
+                await dialog.ShowAsync();
+            }
+            /* if (ime_ == "" || prezime_ == "" || lozinka_ == "")
+             {
+                 var dialog = new MessageDialog("Neispravna prijava.\n Pokušajte ponovo.");
+                 dialog.Title = "Error";
+                 await dialog.ShowAsync();
+             }
+             else
+             {
+                 using (var db = new GreenhouseContext())
+                 {
+                     if (db.Korisnici.Count() > 0)
+                     {
+                         var u = db.Korisnici.Where(b => b.Ime == ime_ && b.Prezime == prezime_ && b.Lozinka == lozinka_).FirstOrDefault();
+                         if (u.tip.Id == 1)
+                         {
+                             NavigationService.Navigate(typeof(Direktor_pocetni));
+                         }
+                         else if (u.tip.Id == 2)
+                         {
+                             NavigationService.Navigate(typeof(Zemljoradnik_pocetni));
+                         }
+                         else
+                         {
+                             var korisnik = db.Korisnici.FirstOrDefault(b => b.Ime == ime_ || b.Prezime == prezime_ || b.Lozinka == lozinka_);
+                             if (korisnik != null)
+                             {
+                                 if (korisnik.Ime != ime_ || korisnik.lozinka != lozinka_ || korisnik.Prezime != prezime_)
+                                 {
+                                     var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo.");
+                                     ime_ = "";
+                                     prezime_ = "";
+                                     lozinka_ = "";
+                                     dialog.Title = "Error";
+                                     await dialog.ShowAsync();
+                                 }
+                             }
+                         }
+
+                     }
+                     else
+                     {
+                         var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo.");
+                         ime_ = "";
+                         prezime_ = "";
+                         lozinka_ = "";
+                         dialog.Title = "Error";
+                         await dialog.ShowAsync();
+                     }
+
+                 }
+
+             } */
         }
-
-}
-
-
-
-
+    }
 }

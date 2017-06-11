@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 
 namespace SmartGreenhouse.Model
 {
-    class Korisnik 
+    class Korisnik
     {
         public string ime;
         public string prezime;
         public string lozinka;
         public TipKorisnika tip;
 
-        public Korisnik (string ime, string prezime,string lozinka)
+        public Korisnik()
+        {
+
+        }
+
+        public Korisnik(string ime, string prezime, string lozinka, string naziv, int id)
         {
             this.ime = ime;
-            this.prezime=prezime;
+            this.prezime = prezime;
             this.lozinka = lozinka;
-
+            this.tip.Id = id;
+            this.tip.Naziv = naziv;
         }
 
         public string Ime
@@ -73,3 +79,4 @@ namespace SmartGreenhouse.Model
         }
     }
 }
+

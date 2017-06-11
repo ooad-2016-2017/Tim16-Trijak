@@ -194,6 +194,7 @@ namespace SmartGreenhouse.Migrations
 
             migrationBuilder.DropTable(
                 name: "Ponude");
+            
         }
     }
 }
