@@ -10,12 +10,13 @@ namespace SmartGreenhouse.Model
     public class TipKorisnika
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        int id;
-        private String naziv;
+        public int id=0;
+        public String naziv="";
 
-        public TipKorisnika(String naziv)
+        public TipKorisnika(String naziv, int id)
         {
             this.naziv = naziv;
+            this.id = id;
         }
 
         public int Id

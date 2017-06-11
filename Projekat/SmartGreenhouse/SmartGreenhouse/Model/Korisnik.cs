@@ -11,20 +11,21 @@ namespace SmartGreenhouse.Model
         public string ime;
         public string prezime;
         public string lozinka;
-        public TipKorisnika tip;
+        //  public TipKorisnika tip;
+        public string naziv; 
 
         public Korisnik()
         {
 
         }
 
-        public Korisnik(string ime, string prezime, string lozinka, string naziv, int id)
+        public Korisnik(string ime1, string prezime1, string lozinka1, string n)
         {
-            this.ime = ime;
-            this.prezime = prezime;
-            this.lozinka = lozinka;
-            this.tip.Id = id;
-            this.tip.Naziv = naziv;
+            ime = ime1;
+            prezime = prezime1;
+            lozinka = lozinka1;
+            naziv=n;
+           // tip.Id = i;
         }
 
         public string Ime
@@ -65,7 +66,19 @@ namespace SmartGreenhouse.Model
             }
         }
 
-        public TipKorisnika Tip
+       public string Naziv
+        {
+            get
+            {
+                return naziv;
+            }
+            set
+            {
+                naziv = value;
+            }
+        }
+
+      /*  public TipKorisnika Tip
         {
             get
             {
@@ -76,7 +89,7 @@ namespace SmartGreenhouse.Model
             {
                 tip = value;
             }
-        }
+        }*/
     }
 }
 
