@@ -101,6 +101,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Arduino.cs" />
     <Compile Include="Model\Korisnik.cs" />
     <Compile Include="Migrations\20170601150838_MyFirstMigration.cs" />
     <Compile Include="Migrations\20170601150838_MyFirstMigration.designer.cs">
@@ -113,6 +114,7 @@
     <Compile Include="Model\Ponuda.cs" />
     <Compile Include="Model\PreuzimanjeInformacija.cs" />
     <Compile Include="Model\Sadnica.cs" />
+    <Compile Include="Model\SerijskiUredjajIIme.cs" />
     <Compile Include="Model\Statistika.cs" />
     <Compile Include="Model\TipIzvjestaja.cs" />
     <Compile Include="Model\TipKorisnika.cs" />
