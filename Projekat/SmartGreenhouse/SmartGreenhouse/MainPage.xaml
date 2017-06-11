@@ -8,6 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel Margin="12">
+            <TextBlock Text="Azure Mobile App - UWP App" FontSize="22" Margin="12" />
+            <TextBox x:Name="txtNaziv" PlaceholderText="Naziv" />
+            <TextBox x:Name="txtKolicina" PlaceholderText="Kolicina" Margin="0,20,0,0"/>
+            <TextBox x:Name="txtCijena" PlaceholderText="Cijena" Margin="0,20,0,0" />
+            <Button x:Name="btnSpasi" Content="Spasi" Tapped="btnSpasi_Tapped" Margin="0,20,0,0" HorizontalAlignment="Stretch" />
+        </StackPanel>
     </Grid>
 </Page>
