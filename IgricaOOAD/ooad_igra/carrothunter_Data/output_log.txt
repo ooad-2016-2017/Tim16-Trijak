@@ -17,7 +17,7 @@ Platform assembly: C:\Users\Emina\Desktop\projekat\Tim16-Trijak\IgricaOOAD\ooad_
 Loading C:\Users\Emina\Desktop\projekat\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Emina\Desktop\projekat\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Emina\Desktop\projekat\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.039 seconds
+- Completed reload, in  0.028 seconds
 Platform assembly: C:\Users\Emina\Desktop\projekat\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Emina\Desktop\projekat\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -53,7 +53,7 @@ The tree Larch01 must use the Nature/Soft Occlusion shader. Otherwise billboardi
  
 (Filename:  Line: 140)
 
-UnloadTime: 4.072647 ms
+UnloadTime: 1.299235 ms
 The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
  
 (Filename:  Line: 1067)
@@ -619,31 +619,13 @@ Internal: JobTempAlloc has allocations that are more than 4 frames old - this is
 (Filename:  Line: 371)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 74.224808 ms
+UnloadTime: 74.239265 ms
 
 Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 888.
-Total: 2.218729 ms (FindLiveObjects: 0.042452 ms CreateObjectMapping: 0.033588 ms MarkObjects: 0.291103 ms  DeleteObjects: 1.851118 ms)
+Total: 2.172544 ms (FindLiveObjects: 0.049916 ms CreateObjectMapping: 0.032189 ms MarkObjects: 0.250050 ms  DeleteObjects: 1.839455 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 17a0 -> priority: 1 
-  Thread -> id: 3ae8 -> priority: 1 
-  Thread -> id: 3f44 -> priority: 1 
-  Thread -> id: 3350 -> priority: 1 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.198002 ms
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 885.
-Total: 0.500567 ms (FindLiveObjects: 0.116161 ms CreateObjectMapping: 0.039186 ms MarkObjects: 0.330756 ms  DeleteObjects: 0.013062 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.106565 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 885.
-Total: 0.445518 ms (FindLiveObjects: 0.059713 ms CreateObjectMapping: 0.037787 ms MarkObjects: 0.340087 ms  DeleteObjects: 0.006997 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.729624 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 885.
-Total: 0.445985 ms (FindLiveObjects: 0.065778 ms CreateObjectMapping: 0.037320 ms MarkObjects: 0.334488 ms  DeleteObjects: 0.007464 ms)
-
+  Thread -> id: 30bc -> priority: 1 
+  Thread -> id: 29b4 -> priority: 1 
+  Thread -> id: 3b7c -> priority: 1 
+  Thread -> id: 2fe4 -> priority: 1 

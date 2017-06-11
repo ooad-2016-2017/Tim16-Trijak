@@ -102,6 +102,14 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170611142432_Inserti.cs" />
+    <Compile Include="Migrations\20170611142432_Inserti.designer.cs">
+      <DependentUpon>20170611142432_Inserti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20170611144014_NoviKorisnici.cs" />
+    <Compile Include="Migrations\20170611144014_NoviKorisnici.designer.cs">
+      <DependentUpon>20170611144014_NoviKorisnici.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Arduino.cs" />
     <Compile Include="Model\Korisnik.cs" />
     <Compile Include="Migrations\20170601150838_MyFirstMigration.cs" />
