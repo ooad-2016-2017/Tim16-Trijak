@@ -1,0 +1,634 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: ATI Mobility Radeon HD 4500 Series (ID=0x9553)
+    Vendor:   ATI
+    VRAM:     1401 MB
+    Driver:   8.970.100.9001
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.100 seconds
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Pulo\Desktop\ooad\Tim16-Trijak\Tim16-Trijak\IgricaOOAD\ooad_igra\carrothunter_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+The tree Boletus_edulis01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+The tree Pine01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+The tree Pine01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+The tree Cedar03 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+The tree Cedar03 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+The tree Larch01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+The tree Larch01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ 
+(Filename:  Line: 140)
+
+UnloadTime: 4.960638 ms
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+The combined number of detail object vertices in one single patch is exceeding the limit (65k). Try decreasing detail density or detail resolution per patch.
+ 
+(Filename:  Line: 1067)
+
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 252.642120 ms
+
+Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 888.
+Total: 7.948406 ms (FindLiveObjects: 0.150718 ms CreateObjectMapping: 0.091924 ms MarkObjects: 0.660734 ms  DeleteObjects: 7.037097 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: fc -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 34.699734 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 885.
+Total: 1.045695 ms (FindLiveObjects: 0.143252 ms CreateObjectMapping: 0.089124 ms MarkObjects: 0.775522 ms  DeleteObjects: 0.028930 ms)
+
