@@ -12,13 +12,13 @@ namespace SmartGreenhouse.Model
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         int id;
-        private int pozicija;
-        private String naziv;
         private float cijena;
         private int kolicina;
+        private string naziv;
+        private int pozicija;
         private int prodato;
 
-        public Sadnica(int pozicija, string naziv, float cijena, int kolicina)
+        public Sadnica(float cijena, int kolicina,string naziv,int pozicija)
         {
             this.pozicija = pozicija;
             this.naziv = naziv;

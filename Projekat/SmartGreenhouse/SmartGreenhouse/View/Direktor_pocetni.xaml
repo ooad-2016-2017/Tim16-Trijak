@@ -27,11 +27,10 @@
 
         <Image Source="ms-appx:///Assets/slika2.jpg" Grid.Column="3" Margin="0" Grid.RowSpan="7" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" Grid.ColumnSpan="2"/>
         <TextBlock x:Name="naslov" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Smart GreenHouse" VerticalAlignment="Center" FontSize="55" FontWeight="Bold" Width="Auto" Grid.Row="1" Grid.ColumnSpan="3"/>
-        <Button x:Name="prikazinarudzbe" Content="Prikaži posljednje narudžbe" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="2" VerticalAlignment="Center" Click="prikazinarudzbe_Click"/>
+        
         <Button x:Name="registrradnika" Content="Registriraj novog radnika" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="6" VerticalAlignment="Center" Click="registrradnika_Click"/>
-        <Button x:Name="prikazigodizvj" Content="Prikaži godišnji izvještaj" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="5" VerticalAlignment="Center" Click="prikazigodizvj_Click"/>
-        <Button x:Name="prikazimjesizvj" Content="Prikaži mjesečni izvještaj" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="4" VerticalAlignment="Center" Click="prikazimjesizvj_Click"/>
-        <Button x:Name="prikazisedmizvj" Content="Prikaži sedmični izvještaj" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="3" VerticalAlignment="Center" Click="prikazisedmizvj_Click"/>
+        <Button x:Name="prikazigodizvj" Content="Prikaži izvještaj" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="5" VerticalAlignment="Center" Click="prikazigodizvj_Click"/>
+
         <CalendarView HorizontalAlignment="Center" Margin="0,0,0,5" Grid.Row="4" VerticalAlignment="Center" Grid.RowSpan="3" Grid.Column="1"/>
         <TextBox x:Name="napomena" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Napiši napomenu" VerticalAlignment="Center" Grid.RowSpan="2" InputScope="Text" Grid.Column="1"/>
         <TextBox x:Name="imeprezime" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="ime i prezime" VerticalAlignment="Center" InputScope="Text" Grid.Column="1"/>

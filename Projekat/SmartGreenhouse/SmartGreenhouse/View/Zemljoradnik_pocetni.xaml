@@ -32,7 +32,6 @@
         <Button x:Name="upisinarudzbu" Content="Upiši narudžbu" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="6" VerticalAlignment="Center" Click="upisinarudzbu_Click"/>
         <Button x:Name="promijenicijenu" Content="Promijeni cijenu sadnice" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="5" VerticalAlignment="Center" Click="promijenicijenu_Click"/>
         <Button x:Name="dodajuklonisortu" Content="Dodaj/ukloni sortu" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="4" VerticalAlignment="Center" Click="dodajuklonisortu_Click"/>
-        <Button x:Name="izmijenisadnice" Content="Izmijeni stanje sadnica" Grid.Column="2" HorizontalAlignment="Center" Margin="0" Grid.Row="3" VerticalAlignment="Center" Click="izmijenisadnice_Click"/>
         <CalendarView HorizontalAlignment="Center" Margin="0,0,0,5" Grid.Row="4" VerticalAlignment="Center" Grid.RowSpan="4" Grid.Column="1"/>
         <TextBox x:Name="napomena" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Napiši napomenu" VerticalAlignment="Center" Grid.RowSpan="2" InputScope="Text" Grid.Column="1"/>
         <TextBox x:Name="imeprezime" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="ime i prezime" VerticalAlignment="Center" InputScope="Text" Grid.Column="1"/>

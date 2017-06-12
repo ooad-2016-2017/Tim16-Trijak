@@ -26,13 +26,27 @@ namespace SmartGreenhouse.ViewModel
 
 
             korisnik_ = new Korisnik();
-            korisnik_.Ime = ime_;
-            korisnik_.Prezime = prezime_;
+            korisnik_.Ime = "Pero";
+            korisnik_.Prezime = "Peric";
             korisnik_.Naziv = "Direktor";
-            //korisnik_.tip.Id = u.Id;
-            korisnik_.Lozinka = lozinka_;
+            korisnik_.Lozinka = "1234";
             //korisnik_.tip.Naziv = u.Naziv;
-
+            using (var db = new GreenhouseContext())
+            {
+                db.Korisnici.Add(korisnik_);
+                db.SaveChanges();
+            }
+            korisnik_ = new Korisnik();
+            korisnik_.Ime = "Mujo";
+            korisnik_.Prezime = "Mujic";
+            korisnik_.Naziv = "Zemljoradnik";
+            korisnik_.Lozinka = "0000";
+            //korisnik_.tip.Naziv = u.Naziv;
+            using (var db = new GreenhouseContext())
+            {
+                db.Korisnici.Add(korisnik_);
+                db.SaveChanges();
+            }
         }
 
 
@@ -77,8 +91,6 @@ namespace SmartGreenhouse.ViewModel
                 OnPropertyChanged("Password");
             }
         }
-
-
         //public ICommand ButtonClicked
         //{
         //    get
@@ -89,7 +101,7 @@ namespace SmartGreenhouse.ViewModel
 
         public async void PrijaviSe(object parameter)
         {
-            NavigationService.Navigate(typeof(Zemljoradnik_pocetni));
+            /*NavigationService.Navigate(typeof(Zemljoradnik_pocetni));
             var tip11 = new TipKorisnika("Zemljoradnik", 2);
             using (var db = new GreenhouseContext())
             {
@@ -98,30 +110,28 @@ namespace SmartGreenhouse.ViewModel
             if (korisnik_.Naziv == "Zemljoradnik")
             {
                 NavigationService.Navigate(typeof(Zemljoradnik_pocetni));
-            } else if (korisnik_.Naziv == "Direktor")
+            }
+            else if (korisnik_.Naziv == "Direktor")
             {
                 NavigationService.Navigate(typeof(Direktor_pocetni));
             }
-        
-            // korisnik_ = new Korisnik();
-            // korisnik_.Ime = ime_;
-            // korisnik_.Prezime = prezime_;
-            // korisnik_.Lozinka = lozinka_;
 
+            var dialog = new MessageDialog("Prijava upješna.");
+            dialog.Title = "Error";
+            await dialog.ShowAsync();*/
 
-
-            /* if (korisnik_ != null)
+             if (korisnik_ != null)
              {
-                 using (var db = new GreenhouseContext())
+                 //using (var db = new GreenhouseContext())
 
-                     db.TipoviKorisnika.Add(korisnik_.tip);
+                   //db.TipoviKorisnika.Add(korisnik_.tip);
              } else
              {
-                 var dialog = new MessageDialog("Neispravna prijava.\n Pokušajte ponovo.");
+                 var dialog = new MessageDialog("Neispravna prijava.\n Pokušajte ponovo");
                  dialog.Title = "Error";
                  await dialog.ShowAsync();
              }
-             /* if (ime_ == "" || prezime_ == "" || lozinka_ == "")
+              if (ime_ == "" || prezime_ == "" || lozinka_ == "")
               {
                   var dialog = new MessageDialog("Neispravna prijava.\n Pokušajte ponovo.");
                   dialog.Title = "Error";
@@ -131,38 +141,48 @@ namespace SmartGreenhouse.ViewModel
               {
                   using (var db = new GreenhouseContext())
                   {
-                      if (db.Korisnici.Count() > 0)
-                      {
-                          var u = db.Korisnici.Where(b => b.Ime == ime_ && b.Prezime == prezime_ && b.Lozinka == lozinka_).FirstOrDefault();
-                          if (u.tip.Id == 1)
-                          {
-                              NavigationService.Navigate(typeof(Direktor_pocetni));
-                          }
-                          else if (u.tip.Id == 2)
-                          {
-                              NavigationService.Navigate(typeof(Zemljoradnik_pocetni));
-                          }
-                          else
-                          {
-                              var korisnik = db.Korisnici.FirstOrDefault(b => b.Ime == ime_ || b.Prezime == prezime_ || b.Lozinka == lozinka_);
-                              if (korisnik != null)
-                              {
-                                  if (korisnik.Ime != ime_ || korisnik.lozinka != lozinka_ || korisnik.Prezime != prezime_)
-                                  {
-                                      var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo.");
-                                      ime_ = "";
-                                      prezime_ = "";
-                                      lozinka_ = "";
-                                      dialog.Title = "Error";
-                                      await dialog.ShowAsync();
-                                  }
-                              }
-                          }
-
+                    if (db.Korisnici.Count() >= 0)
+                    {
+                        var u = db.Korisnici.Where(b => b.Ime == ime_ && b.Prezime == prezime_ && b.Lozinka == lozinka_).FirstOrDefault();
+                        if (u != null)
+                        {
+                            if (u.Naziv == "Direktor")
+                            {
+                                NavigationService.Navigate(typeof(Direktor_pocetni));
+                            }
+                            else if (u.Naziv == "Zemljoradnik")
+                            {
+                                NavigationService.Navigate(typeof(Zemljoradnik_pocetni));
+                            }
+                            else
+                            {
+                                var korisnik = db.Korisnici.FirstOrDefault(b => b.Ime == ime_ || b.Prezime == prezime_ || b.Lozinka == lozinka_);
+                                if (korisnik != null)
+                                {
+                                    if (korisnik.Ime != ime_ || korisnik.lozinka != lozinka_ || korisnik.Prezime != prezime_)
+                                    {
+                                        var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo1.");
+                                        ime_ = "";
+                                        prezime_ = "";
+                                        lozinka_ = "";
+                                        dialog.Title = "Error";
+                                        await dialog.ShowAsync();
+                                    }
+                                }
+                            }
+                        } else
+                        {
+                            var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovonull.");
+                            ime_ = "";
+                            prezime_ = "";
+                            lozinka_ = "";
+                            dialog.Title = "Error";
+                            await dialog.ShowAsync();
+                        } 
                       }
                       else
                       {
-                          var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo.");
+                          var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo2.");
                           ime_ = "";
                           prezime_ = "";
                           lozinka_ = "";
@@ -172,7 +192,7 @@ namespace SmartGreenhouse.ViewModel
 
                   }
 
-              } */
+              } 
         }
     }
 }

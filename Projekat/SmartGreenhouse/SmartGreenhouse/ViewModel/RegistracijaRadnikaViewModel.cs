@@ -67,10 +67,10 @@ namespace SmartGreenhouse.ViewModel
         public async void Registriraj(object parameter)
         {
             korisnik_ = new Korisnik(Ime, Prezime, Lozinka, "Zemljoradnik");
-            // using (var db = new GreenhouseContext())
-
-            // db.TipoviKorisnika.Add(korisnik_.tip);
-            // db.SaveChanges();
+            using (var db = new GreenhouseContext()) { 
+            db.Korisnici.Add(korisnik_);
+            db.SaveChanges();
+        }
             var dialog = new MessageDialog("Korisnik je registrovan!\n");
             await dialog.ShowAsync();
 

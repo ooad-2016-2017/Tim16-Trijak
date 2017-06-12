@@ -117,7 +117,7 @@ namespace SmartGreenhouse.ViewModel
         }
         public void Plasiraj(object parameter)
         {
-            narudzba_ = new Narudzba(redniBrojNarudzbe_, datumNarudzbe_);
+            narudzba_ = new Narudzba(redniBrojNarudzbe_, datumNarudzbe_,odabraneSadnice_);
 
             using (var db = new GreenhouseContext())
             {

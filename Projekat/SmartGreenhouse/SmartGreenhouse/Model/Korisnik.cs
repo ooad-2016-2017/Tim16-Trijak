@@ -8,6 +8,7 @@ namespace SmartGreenhouse.Model
 {
     class Korisnik
     {
+        public int KorisnikId { get; set; }
         public string ime;
         public string prezime;
         public string lozinka;

@@ -34,7 +34,7 @@ namespace SmartGreenhouse.View
 
         private void izmijenisadnice_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Izmjena_stanja_sadnica), null);
+            Frame.Navigate(typeof(Izmjena_cijena_sadnica), null);
         }
 
         private void dodajuklonisortu_Click(object sender, RoutedEventArgs e)

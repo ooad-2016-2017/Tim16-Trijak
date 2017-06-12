@@ -8,39 +8,42 @@ using System.Windows.Input;
 using SmartGreenhouse.Helper;
 using SmartGreenhouse.Model;
 using Windows.UI.Popups;
+using Windows.UI.Xaml.Controls;
 
 namespace SmartGreenhouse.ViewModel
 {
-    class IzmjenaStanjaSadnicaViewModel : MainViewModelBas
+    class IzmjenaCijeneSadnicaViewModel : MainViewModelBas
     {
         ObservableCollection<Sadnica> lista = new ObservableCollection<Sadnica>();
-        int kolicina_ = 0;
+        int cijena_ = 0;
         public INavigationService NavigationService { get; set; }
         public ICommand Sacuvaj { get; set; }
         public Sadnica odabrana_ { get; set; }
-        public IzmjenaStanjaSadnicaViewModel()
+        /*
+        public IzmjenaCijeneSadnicaViewModel()
         {
             Sacuvaj = new RelayCommand<object>(SacuvajPromjene, parameter => true);
             NavigationService = new NavigationService();
             using (var db = new GreenhouseContext())
             {
                 lista = new ObservableCollection<Sadnica>(db.Sadnice.ToList());
+              //  mylistView.ItemsSource = lista;
             }
         }
-        public int Kolicina
+        public int Cijena
         {
             get
             {
-                return kolicina_;
+                return cijena_;
             }
             set
             {
-                kolicina_ = value;
-                OnPropertyChanged("Kolicina");
+                cijena_ = value;
+                OnPropertyChanged("Cijena");
             }
         }
 
-        public ObservableCollection<Sadnica> Lista
+       /* public ObservableCollection<Sadnica> Lista
         {
             get
             {
@@ -73,7 +76,7 @@ namespace SmartGreenhouse.ViewModel
                 using (var db = new GreenhouseContext())
                 {
                     db.Sadnice.Remove(odabrana_);
-                    odabrana_.Kolicina = kolicina_;
+                    odabrana_.Cijena = cijena_;
                     db.Sadnice.Add(odabrana_);
 
                     var dialog = new MessageDialog("Izmjena upješno izvršena!");
@@ -87,7 +90,50 @@ namespace SmartGreenhouse.ViewModel
                 await dialog.ShowAsync();
             }
 
+        } */
+        Sadnica sad1 = new Sadnica(5,300,"Mrkva",1);
+        Sadnica sad2 = new Sadnica(2,200, "Paprika",2);
+        Sadnica sad3 = new Sadnica(3,100, "Krompir", 3);
+
+        public IzmjenaCijeneSadnicaViewModel()
+        {
+            Sacuvaj = new RelayCommand<object>(SacuvajPromjene, parameter => true);
+            NavigationService = new NavigationService();
+            lista.Add(sad1);
+            lista.Add(sad2);
+            lista.Add(sad3);
+        }
+        public int Cijena
+        {
+            get
+            {
+                return cijena_;
+            }
+            set
+            {
+                cijena_ = value;
+                OnPropertyChanged("Cijena");
+            }
         }
 
+        public Sadnica SelectedItem
+        {
+            get
+            {
+                return odabrana_;
+            }
+            set
+            {
+                odabrana_ = value;
+                OnPropertyChanged("SelectedItem");
+            }
+        }
+
+        public async void SacuvajPromjene(object parameter)
+        {
+            lista.Remove(odabrana_);
+            odabrana_.Cijena = cijena_;
+            lista.Add(odabrana_);
+        }
     }
 }

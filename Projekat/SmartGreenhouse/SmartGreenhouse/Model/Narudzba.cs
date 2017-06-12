@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace SmartGreenhouse.Model
         int id;
         private DateTime datumNarudzbe;
         static int redniBrojNarudzbe = 0;
-        // private List<Sadnica> sadnice;
+        private ObservableCollection<Sadnica> sadnice;
 
 
         public int Id
@@ -73,11 +74,11 @@ namespace SmartGreenhouse.Model
          }
          */
 
-        public Narudzba(int redBr, DateTime datum)
+        public Narudzba(int redBr, DateTime datum, ObservableCollection<Sadnica> lista)
         {
             redniBrojNarudzbe = redBr;
             datumNarudzbe = datum;
-            // popraviti da ide direktno u bazu
+            sadnice = lista;
         }
         /* nema smisla da bude u modelu
         public Narudzba(DateTime datumNarudzbe, List<Sadnica> izabraneSadnice)

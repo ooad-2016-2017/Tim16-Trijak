@@ -8,9 +8,10 @@ using SmartGreenhouse.Model;
 namespace SmartGreenhouse.Migrations
 {
     [DbContext(typeof(GreenhouseContext))]
-    partial class GreenhouseContextModelSnapshot : ModelSnapshot
+    [Migration("20170612082427_KorisniciTabela")]
+    partial class KorisniciTabela
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2");
