@@ -12,13 +12,40 @@ namespace SmartGreenhouse.Model
         SerialDevice uredjaj;
         String ime;
 
-        public SerijskiUredjajIIme(SerialDevice uredjaj, string ime)
+        public SerijskiUredjajIIme(SerialDevice uredjaj, String ime)
         {
-            this.Uredjaj = uredjaj;
-            this.Ime = ime;
+            this.uredjaj = uredjaj;
+            this.ime = ime;
         }
 
-        public SerialDevice Uredjaj { get => uredjaj; set => uredjaj = value; }
-        public string Ime { get => ime; set => ime = value; }
+        public SerialDevice Uredjaj
+        {
+            get
+            {
+                return uredjaj;
+            }
+
+            set
+            {
+                uredjaj = value;
+            }
+        }
+
+        internal String Ime
+        {
+            get
+            {
+                return ime;
+            }
+
+            set
+            {
+                ime = value;
+            }
+        }
+
+        
+
+        
     }
 }

@@ -19,7 +19,18 @@ namespace SmartGreenhouse.Model
         public String vlaznostZraka;
         public String stanjeRezervoara;
 
-        public SerialDevice Uredjaj { get => uredjaj; set => uredjaj = value; }
+        public SerialDevice Uredjaj
+        {
+            get
+            {
+                return uredjaj;
+            }
+
+            set
+            {
+                uredjaj = value;
+            }
+        }
 
         public Arduino(SerialDevice uredjaj)
         {
