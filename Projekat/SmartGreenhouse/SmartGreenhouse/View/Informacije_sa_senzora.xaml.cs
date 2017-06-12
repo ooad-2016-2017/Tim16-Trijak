@@ -24,7 +24,7 @@ namespace SmartGreenhouse.View
     /// </summary>
     public sealed partial class Informacije_sa_senzora : Page
     {
-       // Arduino uredjaj;
+        Arduino uredjaj;
         List<string> stringovi;
         List<SerialDevice> uredjaji;
         List<String> listaSenzora;
@@ -44,13 +44,13 @@ namespace SmartGreenhouse.View
 
         private async void osvjezi_Click(object sender, RoutedEventArgs e)
         {
-          // valja await Arduino.skenirajPortove();
+          await Arduino.skenirajPortove();
             stringovi = new List<string>();
             uredjaji = new List<SerialDevice>();
-          //valja  foreach(SerijskiUredjajIIme i in Arduino.serijskiUredjaji)
+           foreach(SerijskiUredjajIIme i in Arduino.serijskiUredjaji)
             {
-               //valja  stringovi.Add(i.Ime);
-                //valja uredjaji.Add(i.Uredjaj);
+                 stringovi.Add(i.Ime);
+                 uredjaji.Add(i.Uredjaj);
             }
             lista.ItemsSource = stringovi;
             senzori.ItemsSource = listaSenzora;
@@ -61,8 +61,8 @@ namespace SmartGreenhouse.View
             string ime = lista.SelectedItem.ToString();
             if (ime != null)
             {
-             //ovo valja   uredjaj = new Arduino(uredjaji[stringovi.IndexOf(ime)]);
-                //uredjaj = new Arduino(uredjaji[0]);
+             uredjaj = new Arduino(uredjaji[stringovi.IndexOf(ime)]);
+                uredjaj = new Arduino(uredjaji[0]);
             }
             
         }
@@ -70,7 +70,7 @@ namespace SmartGreenhouse.View
         private async void senzori_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             String selektovani = senzori.SelectedItem.ToString();
-            /*switch(selektovani)
+            switch(selektovani)
             {
                 case TEMPERATURA:
                     await uredjaj.dajTemperaturu();
@@ -100,7 +100,7 @@ namespace SmartGreenhouse.View
 
                 default:
                     break;
-            }*/
+            }
         }
     }
 }
