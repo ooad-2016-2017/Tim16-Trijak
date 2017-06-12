@@ -134,6 +134,8 @@ namespace SmartGreenhouse.ViewModel
             lista.Remove(odabrana_);
             odabrana_.Cijena = cijena_;
             lista.Add(odabrana_);
+            var dialog2 = new MessageDialog("Izmjene su uspješno izvršene!");
+            await dialog2.ShowAsync();
         }
     }
 }
