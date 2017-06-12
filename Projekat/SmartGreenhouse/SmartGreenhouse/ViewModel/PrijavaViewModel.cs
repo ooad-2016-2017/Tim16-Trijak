@@ -161,7 +161,7 @@ namespace SmartGreenhouse.ViewModel
                                 {
                                     if (korisnik.Ime != ime_ || korisnik.lozinka != lozinka_ || korisnik.Prezime != prezime_)
                                     {
-                                        var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo1.");
+                                        var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo.");
                                         ime_ = "";
                                         prezime_ = "";
                                         lozinka_ = "";
@@ -172,7 +172,7 @@ namespace SmartGreenhouse.ViewModel
                             }
                         } else
                         {
-                            var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovonull.");
+                            var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo.");
                             ime_ = "";
                             prezime_ = "";
                             lozinka_ = "";
@@ -182,7 +182,7 @@ namespace SmartGreenhouse.ViewModel
                       }
                       else
                       {
-                          var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo2.");
+                          var dialog = new MessageDialog("Pogrešni podaci.\n Pokušajte ponovo.");
                           ime_ = "";
                           prezime_ = "";
                           lozinka_ = "";

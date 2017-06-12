@@ -91,9 +91,9 @@ namespace SmartGreenhouse.ViewModel
             }
 
         } */
-        Sadnica sad1 = new Sadnica(5,300,"Mrkva",1);
-        Sadnica sad2 = new Sadnica(2,200, "Paprika",2);
-        Sadnica sad3 = new Sadnica(3,100, "Krompir", 3);
+        Sadnica sad1 = new Sadnica(5,300,"Mrkva");
+        Sadnica sad2 = new Sadnica(2,200, "Paprika");
+        Sadnica sad3 = new Sadnica(3,100, "Krompir");
 
         public IzmjenaCijeneSadnicaViewModel()
         {

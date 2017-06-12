@@ -31,9 +31,6 @@
         <Button x:Name="nazad" Content="Natrag na pocetnu" Grid.Column="1" HorizontalAlignment="Left" Margin="0" Grid.Row="7" VerticalAlignment="Bottom" Click="nazad_Click"/>
         <CalendarView HorizontalAlignment="Center" Margin="0,0,0,5" Grid.Row="4" VerticalAlignment="Center" Grid.RowSpan="3" Grid.Column="1"/>
         <TextBox x:Name="napomena" HorizontalAlignment="Center" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Napiši napomenu" VerticalAlignment="Center" Grid.RowSpan="2" InputScope="Text" Grid.Column="1"/>
-        <TextBox x:Name="imeprezime" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="ime i prezime" VerticalAlignment="Center" InputScope="Text" Grid.Column="1"/>
-        <Image x:Name="image" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="100" Grid.RowSpan="2" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="profilna" HorizontalAlignment="Center" Height="100" Margin="0" VerticalAlignment="Center" Width="100" Stretch="UniformToFill"/>
         <UserControl Grid.Column="2" HorizontalAlignment="Center" Height="100" Margin="0" Grid.Row="3" Grid.RowSpan="4" VerticalAlignment="Center" Width="100"/>
         <ListView x:Name="listView" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center" Height="100" Margin="112.333,78,12.667,10.333" Grid.Row="3" Grid.RowSpan="2" VerticalAlignment="Center" Width="100" SelectionMode="None">
             <ListView.ItemTemplate>

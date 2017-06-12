@@ -106,9 +106,9 @@ namespace SmartGreenhouse.ViewModel
         public ICommand Sacuvaj { get; set; }
         public INavigationService NavigationService { get; set; }
         private ObservableCollection<Sadnica> sadnice_ = new ObservableCollection<Sadnica>();
-        Sadnica sad1 = new Sadnica(5,300,"Mrkva",1);
-        Sadnica sad2 = new Sadnica(3,250,"Paprika",2);
-        Sadnica sad3 = new Sadnica(6,200, "Krompir",3);
+        Sadnica sad1 = new Sadnica(5,300,"Mrkva");
+        Sadnica sad2 = new Sadnica(3,250,"Paprika");
+        Sadnica sad3 = new Sadnica(6,200, "Krompir");
         Sadnica sadnica_;
         private Sadnica odabrana_;
 
@@ -119,13 +119,13 @@ namespace SmartGreenhouse.ViewModel
             sadnice_.Add(sad1);
             sadnice_.Add(sad2);
             sadnice_.Add(sad3);
-            using (var db = new GreenhouseContext())
+           /* using (var db = new GreenhouseContext())
             {
-                //db.Sadnice.Add(sad1);
-               // db.Sadnice.Add(sad2);
-               // db.Sadnice.Add(sad3);
-             //   db.SaveChanges();
-            }
+                db.Sadnice.Add(sad1);
+                db.Sadnice.Add(sad2);
+                db.Sadnice.Add(sad3);
+             db.SaveChanges();
+            }*/
            
         }
 

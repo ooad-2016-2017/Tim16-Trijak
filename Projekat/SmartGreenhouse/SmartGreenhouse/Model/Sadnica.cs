@@ -14,23 +14,27 @@ namespace SmartGreenhouse.Model
         int id;
         private float cijena;
         private int kolicina;
+        private int narudzbaID;
         private string naziv;
+        private int ponudaID;
         private int pozicija;
         private int prodato;
 
-        public Sadnica(float cijena, int kolicina,string naziv,int pozicija)
+        public Sadnica(float cijena, int kolicina,string naziv)
         {
-            this.pozicija = pozicija;
+            this.pozicija = 0;
             this.naziv = naziv;
             this.cijena = cijena;
             this.kolicina = kolicina;
             this.prodato = 0;
+            this.narudzbaID = 0;
+            this.ponudaID = 0;
         }
 
-        public Sadnica()
+        /*public Sadnica()
         {
             this.prodato = 0;
-        }
+        }*/
 
 
        //Ovo je stvar za viewmodel a ne za model
