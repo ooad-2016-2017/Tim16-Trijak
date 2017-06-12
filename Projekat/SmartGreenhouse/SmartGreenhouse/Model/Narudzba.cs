@@ -10,14 +10,14 @@ namespace SmartGreenhouse.Model
     class Narudzba
     {
 
-       
-       // private System.Collections.ObjectModel.ObservableCollection<Sadnica> sadnice;
+
+        // private System.Collections.ObjectModel.ObservableCollection<Sadnica> sadnice;
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         int id;
         private DateTime datumNarudzbe;
         static int redniBrojNarudzbe = 0;
-       // private List<Sadnica> sadnice;
+        // private List<Sadnica> sadnice;
 
 
         public int Id
@@ -59,25 +59,25 @@ namespace SmartGreenhouse.Model
             }
         }
 
-       /* public List<Sadnica> Sadnice
-        {
-            get
-            {
-                return sadnice;
-            }
+        /* public List<Sadnica> Sadnice
+         {
+             get
+             {
+                 return sadnice;
+             }
 
-            set
-            {
-                sadnice = value;
-            }
-        }
-        */
+             set
+             {
+                 sadnice = value;
+             }
+         }
+         */
 
         public Narudzba(int redBr, DateTime datum)
         {
-                redniBrojNarudzbe = redBr;
-                datumNarudzbe = datum;
-                 // popraviti da ide direktno u bazu
+            redniBrojNarudzbe = redBr;
+            datumNarudzbe = datum;
+            // popraviti da ide direktno u bazu
         }
         /* nema smisla da bude u modelu
         public Narudzba(DateTime datumNarudzbe, List<Sadnica> izabraneSadnice)

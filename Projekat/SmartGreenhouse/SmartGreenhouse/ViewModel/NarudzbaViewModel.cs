@@ -13,7 +13,7 @@ namespace SmartGreenhouse.ViewModel
 {
     class NarudzbaViewModel : MainViewModelBas
     {
-        private Narudzba narudzba_;
+        private Narudzba narudzba_ = null;
         private int redniBrojNarudzbe_ = 0;
         private DateTime datumNarudzbe_;
         private int kolicina_ = 0;
@@ -91,11 +91,21 @@ namespace SmartGreenhouse.ViewModel
             {
                 using (var db = new GreenhouseContext())
                 {
-                    int trazeni_Id = 1;
+                    sadnice_ = new ObservableCollection<Sadnica>(db.Sadnice.ToList());
+                    odabraneSadnice_ = new ObservableCollection<Sadnica>();
+                    int trazeni_Id = odabrana_.Id;
                     var u = db.Sadnice.Where(b => b.Id == trazeni_Id).FirstOrDefault();
                     //u.IsCheckedIn = true;
-                    db.SaveChanges();
-                    odabraneSadnice_.Add(odabrana_);
+                    if (u.rezervirajSadnicu(kolicina_) == true) //u rezervirajSadnicu mijenja kolicinu i koliko je prodato
+                    {
+                        odabraneSadnice_.Add(odabrana_);
+                    }
+                    else
+                    {
+                        var dialog = new MessageDialog("Željeni broj sadnica nije dostupan!");
+                        dialog.Title = "Error";
+                        await dialog.ShowAsync();
+                    }
                 }
             }
             else
@@ -108,6 +118,11 @@ namespace SmartGreenhouse.ViewModel
         public void Plasiraj(object parameter)
         {
             narudzba_ = new Narudzba(redniBrojNarudzbe_, datumNarudzbe_);
+
+            using (var db = new GreenhouseContext())
+            {
+                db.Narudzbe.Add(narudzba_);
+            }
         }
 
     }
@@ -115,54 +130,53 @@ namespace SmartGreenhouse.ViewModel
 
 
 
-       
-
-
-        /*  private ObservableCollection<Artikal> listaArtikala;
-  =======
-          /*
-          private ObservableCollection<Artikal> listaArtikala;
-  >>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
-          private Sadnica oznacenaSadnica;
-          private bool imaNaStanju;
-          private Korisnik trenutniKorisnik;
-          private string rijecPretrage;
-          public NarudzbaViewModel1 () {
-              DodajKolicinu = new RelayCommand(dodajKolicinu);
-              PretragaKomanda = new RelayCommand(pretragaKomanda);
-              DodajSadnicu = new RelayCommand(dodajSadnicu);
-              UnesiDatum = new RelayCommand(unesiDatum);
-              NapisiNapomenu = new RelayCommand(napisiNapomenu);
-
-          }
-
-          public RelayCommand DodajKolicinu { get; set; }
-          public RelayCommand PretragaKomanda { get; set; }
-          public RelayCommand DodajSadnicu { get; set; }
-          public RelayCommand UnesiDatum { get; set; }
-          public RelayCommand NapisiNapomenu { get; set; }
-
-          //Interfejs
-   public event PropertyChangedEventHandler PropertyChanged;
-          public void OnPropertyChanged(string propertyName)
-          {
-              if (PropertyChanged != null)
-              {
-                  PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-              }
-          }
 
 
 
-          public void dodajSadnicu(object parametar) {}
-          public void pretragaKomanda(object parametar) { }
-          public void dodajKolicinu(object parametar) { }
-          public void unesiDatum(object parametar) { }
-          public void napisiNapomenu(object parametar) {
-          }
+/*  private ObservableCollection<Artikal> listaArtikala;
+=======
+  /*
+  private ObservableCollection<Artikal> listaArtikala;
+>>>>>>> 4acd067a6716ccc56c2c9434ce5a71694a40ce3c
+  private Sadnica oznacenaSadnica;
+  private bool imaNaStanju;
+  private Korisnik trenutniKorisnik;
+  private string rijecPretrage;
+  public NarudzbaViewModel1 () {
+      DodajKolicinu = new RelayCommand(dodajKolicinu);
+      PretragaKomanda = new RelayCommand(pretragaKomanda);
+      DodajSadnicu = new RelayCommand(dodajSadnicu);
+      UnesiDatum = new RelayCommand(unesiDatum);
+      NapisiNapomenu = new RelayCommand(napisiNapomenu);
+
+  }
+
+  public RelayCommand DodajKolicinu { get; set; }
+  public RelayCommand PretragaKomanda { get; set; }
+  public RelayCommand DodajSadnicu { get; set; }
+  public RelayCommand UnesiDatum { get; set; }
+  public RelayCommand NapisiNapomenu { get; set; }
+
+  //Interfejs
+public event PropertyChangedEventHandler PropertyChanged;
+  public void OnPropertyChanged(string propertyName)
+  {
+      if (PropertyChanged != null)
+      {
+          PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+      }
+  }
 
 
-      */
+
+  public void dodajSadnicu(object parametar) {}
+  public void pretragaKomanda(object parametar) { }
+  public void dodajKolicinu(object parametar) { }
+  public void unesiDatum(object parametar) { }
+  public void napisiNapomenu(object parametar) {
+  }
 
 
- 
+*/
+
+
