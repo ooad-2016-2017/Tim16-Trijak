@@ -114,6 +114,10 @@
     <Compile Include="Migrations\20170612082427_KorisniciTabela.designer.cs">
       <DependentUpon>20170612082427_KorisniciTabela.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170612141555_DodajemoSadnice.cs" />
+    <Compile Include="Migrations\20170612141555_DodajemoSadnice.designer.cs">
+      <DependentUpon>20170612141555_DodajemoSadnice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Arduino.cs" />
     <Compile Include="Model\Korisnik.cs" />
     <Compile Include="Migrations\20170601150838_MyFirstMigration.cs" />

@@ -20,6 +20,7 @@ namespace SmartGreenhouse.Model
         public DbSet<TipIzvjestaja> TipoviIzvjestaja { get; set; }
         public DbSet<TipKorisnika> TipoviKorisnika { get; set; }
         public DbSet<Korisnik> Korisnici { get; set; }
+        public DbSet<Sadnica> Saadnice { get; set; }
         //dodati ostale setove/tabele
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

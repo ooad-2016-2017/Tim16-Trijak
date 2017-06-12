@@ -38,7 +38,7 @@
         <UserControl Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Center" Height="100" Margin="0" Grid.Row="5" VerticalAlignment="Center" Width="100" Grid.RowSpan="3"/>
         <ComboBox x:Name="lista" Grid.Column="1" HorizontalAlignment="Left" Margin="0,11,0,10" Grid.Row="2" VerticalAlignment="Center" Width="269" SelectionChanged="lista_SelectionChanged"/>
         <Button x:Name="osvjezi" Content="Osvježi" Grid.Column="1" HorizontalAlignment="Right" Margin="0" Grid.Row="2" VerticalAlignment="Center" Click="osvjezi_Click"/>
-        <ComboBox x:Name="senzori" Grid.Column="2" HorizontalAlignment="Left" Margin="51,16,0,0" Grid.Row="2" VerticalAlignment="Top" Width="262" Grid.ColumnSpan="2" SelectionChanged="senzori_SelectionChanged"/>
+        <ComboBox x:Name="senzori" Grid.Column="2" HorizontalAlignment="Left" Margin="0" Grid.Row="2" VerticalAlignment="Center" Width="262" Grid.ColumnSpan="2" SelectionChanged="senzori_SelectionChanged"/>
 
     </Grid>
 </Page>
