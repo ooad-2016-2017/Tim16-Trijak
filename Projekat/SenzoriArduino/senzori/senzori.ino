@@ -44,65 +44,80 @@ void setup(){
 
 int dajOsvjetljenje(){
   int osvjetljenje = analogRead(osvjetlj); 
-  if(osvjetljenje > threshold_osvjetljenje ){    
-        digitalWrite(zelosvj, HIGH);
-        digitalWrite(crvosvj, LOW); 
-    }else{
-        digitalWrite(zelosvj, LOW);
-        digitalWrite(crvosvj, HIGH); 
-    }
+  
     return osvjetljenje;
 }
 
 int dajVlaznostZemlje(){
   int vlaznostZemlje = 1023-analogRead(vlazZemlj); 
-  if(vlaznostZemlje > threshold_vlaznostzemlje){    
-        digitalWrite(zelvlzem, HIGH);
-        digitalWrite(crvvlzem, LOW); 
-    }else{
-        digitalWrite(zelvlzem, LOW);
-        digitalWrite(crvvlzem, HIGH); 
-    }
+  
     return vlaznostZemlje;
 }
 
 int dajTemperaturu(){
    DHT.read11(DHT11_PIN);
-    if(DHT.temperature > threshold_temperatura){    
+    
+    return DHT.temperature;
+}
+
+int dajVlaznostZraka(){
+   DHT.read11(DHT11_PIN);
+    
+    return DHT.humidity;
+}
+
+int dajStanjeRezervoara(){
+  int stanjeRezervoara = analogRead(rezervoar); 
+  
+    return stanjeRezervoara;
+}
+
+void provjeriDiode(){
+  //temperatura
+  if(dajTemperaturu() > threshold_temperatura){    
         digitalWrite(zeltemp, HIGH);
         digitalWrite(crvtemp, LOW); 
     }else{
         digitalWrite(zeltemp, LOW);
         digitalWrite(crvtemp, HIGH); 
     }
-    return DHT.temperature;
-}
-
-int dajVlaznostZraka(){
-   DHT.read11(DHT11_PIN);
-    if(DHT.humidity > threshlod_vlaznostzraka){    
+  //vlaznost zemlje
+  if(dajVlaznostZemlje() > threshold_vlaznostzemlje){    
+        digitalWrite(zelvlzem, HIGH);
+        digitalWrite(crvvlzem, LOW); 
+    }else{
+        digitalWrite(zelvlzem, LOW);
+        digitalWrite(crvvlzem, HIGH); 
+    }
+  //vlaznost zraka
+  if(dajVlaznostZraka() > threshlod_vlaznostzraka){    
         digitalWrite(zelvlzr, HIGH);
         digitalWrite(crvvlzr, LOW); 
     }else{
         digitalWrite(zelvlzr, LOW);
         digitalWrite(crvvlzr, HIGH); 
     }
-    return DHT.humidity;
-}
-
-int dajStanjeRezervoara(){
-  int stanjeRezervoara = analogRead(rezervoar); 
-  if(stanjeRezervoara > threshold_navodnjavanje){    
+  //osvjetljenje
+  if(dajOsvjetljenje() > threshold_osvjetljenje ){    
+        digitalWrite(zelosvj, HIGH);
+        digitalWrite(crvosvj, LOW); 
+    }else{
+        digitalWrite(zelosvj, LOW);
+        digitalWrite(crvosvj, HIGH); 
+    }
+  //rezervoar
+  if(dajStanjeRezervoara() > threshold_navodnjavanje){    
         digitalWrite(zelrez, HIGH);
         digitalWrite(crvrez, LOW); 
     }else{
         digitalWrite(zelrez, LOW);
         digitalWrite(crvrez, HIGH); 
     }
-    return stanjeRezervoara;
+  delay(1000);
 }
 
 void loop(){
+  provjeriDiode();
   if(Serial.available())
     info=Serial.parseInt();
   switch(info){
