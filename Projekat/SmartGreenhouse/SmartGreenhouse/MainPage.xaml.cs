@@ -38,7 +38,7 @@ namespace SmartGreenhouse
                 obj.kolicina = txtKolicina.Text;
                 obj.cijena = txtCijena.Text;
                 userTableObj.InsertAsync(obj);
-                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novogstudenta.");
+                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novu sadnicu.");
 
 
                 msgDialog.ShowAsync();
